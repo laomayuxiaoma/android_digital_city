@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <ProgressBar
+            android:id="@+id/webcommon_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@+id/top" />
+
+        <com.muheda.mhdsystemkit.systemUI.commonView.MHDWebview
+            android:id="@+id/webcommon_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top"
+            android:scrollbars="none" />
+
+        <include layout="@layout/common_title" />
+    </RelativeLayout>
+</layout>
+

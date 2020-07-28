@@ -1,0 +1,24 @@
+apply plugin: 'com.android.library'
+apply plugin:'com.github.dcendents.android-maven'
+android {
+    compileSdkVersion rootProject.ext.commonCompileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.commonMinSdkVersion
+        targetSdkVersion rootProject.ext.android.commonTargetSdkVersion
+        versionCode rootProject.ext.android.commonVersionCode
+        versionName rootProject.ext.android.commonversionName
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:27.1.1'
+    compile files('libs/weibosdkcore_release.jar')
+}

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/nulldata" />
+
+        <TextView
+            android:id="@+id/tv_response"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:text="请求结果"
+            android:textSize="@dimen/textsize_12sp" />
+
+        <TextView
+            android:id="@+id/tv_replace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="@drawable/title_bg"
+            android:paddingLeft="@dimen/dp_24"
+            android:paddingTop="@dimen/dp_4"
+            android:paddingRight="@dimen/dp_24"
+            android:paddingBottom="@dimen/dp_4"
+            android:text="重试"
+            android:textSize="@dimen/textsize_16sp" />
+
+    </LinearLayout>
+</layout>
+
+

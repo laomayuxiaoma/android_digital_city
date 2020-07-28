@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/decor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linear_backgroud_grayshape">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#22262E"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            tools:text="标题"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:layout_marginTop="20dp"/>
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/title"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/content_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:layout_below="@+id/title"
+                android:orientation="vertical"
+                >
+            </LinearLayout>
+            <TextView
+                android:id="@+id/message"
+                android:layout_width="match_parent"
+                android:layout_height="77dp"
+                android:gravity="center"
+                android:paddingRight="20dp"
+                android:paddingLeft="20dp"
+                android:textColor="#22262E"
+                tools:text="内容"
+                android:textSize="13dp"/>
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line_bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#EBEBEB"
+            android:layout_below="@+id/content"/>
+
+        <!-- 确认   取消-->
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:layout_below="@+id/line_bottom">
+
+            <Button
+                android:id="@+id/dialog_button_cancel"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="取消"
+                android:clickable="true"
+                android:textColor="#6F7580"
+                android:textSize="14dp"
+                android:textStyle="bold"/>
+
+            <View
+                android:id="@+id/line_vertical"
+                android:layout_width="0.5dp"
+                android:background="#EBEBEB"
+                android:layout_height="fill_parent"/>
+
+            <Button
+                android:id="@+id/dialog_button_ok"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="确定"
+                android:clickable="true"
+                android:textColor="#4385F5"
+                android:textSize="14dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</layout>

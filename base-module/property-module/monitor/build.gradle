@@ -1,0 +1,34 @@
+apply plugin: 'com.android.library'
+apply plugin:'com.github.dcendents.android-maven'
+android {
+    compileSdkVersion rootProject.ext.commonCompileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.commonMinSdkVersion
+        targetSdkVersion rootProject.ext.android.commonTargetSdkVersion
+        versionCode rootProject.ext.android.commonVersionCode
+        versionName rootProject.ext.android.commonversionName
+        consumerProguardFiles "proguard-rules.pro"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile files('libs/gt_sdk_3.1.0.jar')
+}
+
+
+
+
+
+
+

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="47dp"
+        app:layout_constraintBottom_toTopOf="@+id/bbl_navigation"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.bottombar.BottomBarLayout
+        android:id="@+id/bbl_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:gravity="bottom|end"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.bottombar.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconHeight="@dimen/dp_20"
+            app:iconNormal="@mipmap/app_home_unselect"
+            app:iconSelected="@mipmap/app_home_unselect"
+            app:iconWidth="@dimen/dp_20"
+            app:itemMarginTop="2dp"
+            app:itemText="首页"
+            app:itemTextSize="9sp"
+            app:textColorNormal="@color/color_606266"
+            app:textColorSelected="@color/color_4385F5" />
+
+        <com.bottombar.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconHeight="@dimen/dp_20"
+            app:iconNormal="@mipmap/app_deal_unselect"
+            app:iconSelected="@mipmap/app_deal_selected"
+            app:iconWidth="@dimen/dp_20"
+            app:itemMarginTop="2dp"
+            app:itemText="交易"
+            app:itemTextSize="9sp"
+            app:textColorNormal="@color/color_606266"
+            app:textColorSelected="@color/color_4385F5" />
+
+        <com.bottombar.BottomBarItem
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:iconHeight="@dimen/dp_20"
+            app:iconNormal="@mipmap/app_me_unselect"
+            app:iconSelected="@mipmap/app_me_selected"
+            app:iconWidth="@dimen/dp_20"
+            app:itemMarginTop="2dp"
+            app:itemText="我的"
+            app:itemTextSize="9sp"
+            app:textColorNormal="@color/color_606266"
+            app:textColorSelected="@color/color_4385F5" />
+
+    </com.bottombar.BottomBarLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

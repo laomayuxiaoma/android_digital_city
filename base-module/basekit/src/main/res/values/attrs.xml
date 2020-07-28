@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SwipeBackLayout">
+        <attr name="edge_size" format="dimension"/>
+        <attr name="edge_flag">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="bottom" value="2" />
+            <enum name="all" value="3" />
+        </attr>
+        <attr name="shadow_left" format="reference"/>
+        <attr name="shadow_right" format="reference"/>
+        <attr name="shadow_bottom" format="reference"/>
+    </declare-styleable>
+
+    <attr name="SwipeBackLayoutStyle" format="reference"/>
+
+    <declare-styleable name="VerticalSwitchTextView">
+        <attr name="switchDuaration" format="integer"/>
+        <attr name="idleDuaration" format="integer"/>
+        <attr name="switchOrientation">
+            <enum name="up"  value="0"/>
+            <enum name="down"  value="1"/>
+        </attr>
+        <attr name="alignment">
+            <enum name="center" value="0"/>
+            <enum name="left" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundProgressBar">
+        <attr name="roundColor" format="color" />
+        <attr name="roundProgressColor" format="color" />
+        <attr name="roundWidth" format="dimension"></attr>
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="max" format="integer"></attr>
+        <attr name="textIsDisplayable" format="boolean"></attr>
+        <attr name="style">
+            <enum name="STROKE" value="0"></enum>
+            <enum name="FILL" value="1"></enum>
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="PullLeftToRefreshLayout">
+        <attr name="footerBgColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="MultiScrollNumber">
+        <attr name="primary_number" format="integer" />
+        <attr name="target_number" format="integer" />
+        <attr name="number_size" format="integer" />
+        <!--<attr name="number_color" format="color"/>-->
+    </declare-styleable>
+    <!--扩散圆颜色-->
+    <attr name="diffuse_color" format="color"/>
+    <!--中心圆颜色-->
+    <attr name="diffuse_coreColor" format="color"/>
+    <!--中心圆图片-->
+    <attr name="diffuse_coreImage" format="reference"/>
+    <!--中心圆半径-->
+    <attr name="diffuse_coreRadius" format="float"/>
+    <!--扩散圆宽度,值越小越宽-->
+    <attr name="diffuse_width" format="integer"/>
+    <!--最大扩散宽度-->
+    <attr name="diffuse_maxWidth" format="integer"/>
+    <!--扩散速度，值越大越快-->
+    <attr name="diffuse_speed" format="integer"/>
+
+    <declare-styleable name="DiffuseView">
+        <attr name="diffuse_color"/>
+        <attr name="diffuse_coreColor"/>
+        <attr name="diffuse_coreImage"/>
+        <attr name="diffuse_coreRadius"/>
+        <attr name="diffuse_width"/>
+        <attr name="diffuse_maxWidth"/>
+        <attr name="diffuse_speed"/>
+    </declare-styleable>
+    <declare-styleable name="CircleProgressBar">
+        <attr name="mlpb_inner_radius" format="dimension" />
+        <attr name="mlpb_background_color" format="color" />
+        <attr name="mlpb_progress_color" format="color" />
+        <attr name="mlpb_progress_stoke_width" format="dimension" />
+        <attr name="mlpb_show_arrow" format="boolean" />
+        <attr name="mlpb_enable_circle_background" format="boolean" />
+        <attr name="mlpb_arrow_width" format="dimension" />
+        <attr name="mlpb_arrow_height" format="dimension" />
+        <attr name="mlpb_progress" format="integer" />
+        <attr name="mlpb_max" format="integer" />
+        <attr name="mlpb_progress_text_size" format="dimension" />
+        <attr name="mlpb_progress_text_color" format="color" />
+
+        <!-- <attr name="mlpb_progress_text_offset" format="dimension"/> -->
+
+        <attr name="mlpb_progress_text_visibility" format="enum">
+            <enum name="visible" value="0" />
+            <enum name="invisible" value="1" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="RenderFocusView">
+        <attr name="RenderColor" format="color" localization="suggested" />
+        <attr name="RenderDimension" format="dimension" localization="suggested" />
+        <attr name="RenderOverlay" format="boolean" localization="suggested" />
+        <attr name="RenderAlpha" format="float" localization="suggested" />
+        <attr name="RenderDuration" format="integer" localization="suggested" />
+        <attr name="RenderFadeDuration" format="integer" localization="suggested" />
+        <attr name="RenderHover" format="boolean" localization="suggested" />
+        <attr name="RenderBackground" format="color" localization="suggested" />
+        <attr name="RenderDelayClick" format="boolean" localization="suggested" />
+        <attr name="RenderPersistent" format="boolean" localization="suggested" />
+        <attr name="RenderInAdapter" format="boolean" localization="suggested" />
+        <attr name="RenderRoundedCorners" format="dimension" localization="suggested" />
+    </declare-styleable>
+
+
+
+</resources>

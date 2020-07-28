@@ -1,0 +1,26 @@
+include ':app', ':operational-module:me-module',':base-module:basekit',
+        ':operational-module:deal-module', ':operational-module:home-module'
+rootProject.name='android_digital_city'
+
+if (!isDependencies.toBoolean()) {
+    include ':base-module:property-module:monitor',
+            ':base-module:function-module:selector', ':base-module:function-module:calendar',
+            ':base-module:function-module:mdsearch', ':base-module:function-module:tabcontainerview',
+            /*':base-module:function-module:citypickerview',*/ ':base-module:function-module:pickerview',
+            ':base-module:function-module:customrefreshlayout', ':base-module:function-module:imageloader',
+            ':base-module:function-module:toast_dialog', ':base-module:function-module:citylocation',
+            ":base-module:function-module:pictureselect", ":base-module:function-module:amapservice",
+            ':base-module:function-module:customtitleview', ':base-module:function-module:calendarview' ,
+            ':base-module:function-module:BottomNavigation',':base-module:function-module:citypicker',
+            ':base-module:function-module:loadandshare',':base-module:function-module:refresh-layout',
+            ':base-module:system-module:baseanimation',
+            ':base-module:function-module:customtablayout',
+            ':base-module:third-module:zxing', ':base-module:third-module:loadandshare',
+            ':base-module:third-module:weiboSDK', ':base-module:third-module:pushlib', ':base-module:function-module:picture_library' ,
+            ':base-module:function-module:ucrop',
+            ':base-module:function-module:functionkit',
+            ':base-module:system-module:systemkit',
+            ':base-module:property-module:propertykit',
+            ':base-module:third-module:thirdkit',
+            ':base-module:communicationinterface'
+}

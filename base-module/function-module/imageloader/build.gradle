@@ -1,0 +1,53 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+apply plugin:'com.github.dcendents.android-maven'
+android {
+    compileSdkVersion rootProject.ext.commonCompileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.commonMinSdkVersion
+        targetSdkVersion rootProject.ext.android.commonTargetSdkVersion
+        versionCode rootProject.ext.android.commonVersionCode
+        versionName rootProject.ext.android.commonversionName
+        consumerProguardFiles "proguard-rules.pro"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.4'//图片加载库
+//    api 'com.blankj:utilcode:1.21.1'
+}
+
+
+
+
+//uploadArchives {
+//    if (isAllPack.toBoolean() || isImageloaderPack.toBoolean()) {
+//        repositories {
+//            mavenDeployer {
+//                repository(url: "file://localhost/" + System.getenv("PATH_HOME") + "/extras/")
+//                pom.version = '1.0'
+//                pom.groupId = 'com.muheda.imageloader'
+//                pom.artifactId = 'imageloader'
+//            }
+//        }
+//    }
+//}

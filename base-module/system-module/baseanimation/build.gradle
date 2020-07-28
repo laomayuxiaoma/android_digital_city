@@ -1,0 +1,32 @@
+apply plugin: 'com.android.library'
+apply plugin:'com.github.dcendents.android-maven'
+android {
+    compileSdkVersion rootProject.ext.commonCompileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.commonMinSdkVersion
+        targetSdkVersion rootProject.ext.android.commonTargetSdkVersion
+        versionCode rootProject.ext.android.commonVersionCode
+        versionName rootProject.ext.android.commonversionName
+        consumerProguardFiles "proguard-rules.pro"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            consumerProguardFiles 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.daimajia.easing:library:2.0@aar'
+    compile 'com.android.support:support-compat:25.1.1'
+
+}
+//apply from: './gradle-mvn-push.gradle'
+
+
+

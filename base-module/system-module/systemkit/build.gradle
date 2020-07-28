@@ -1,0 +1,53 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+apply plugin:'com.github.dcendents.android-maven'
+android {
+    compileSdkVersion rootProject.ext.commonCompileSdkVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.commonMinSdkVersion
+        targetSdkVersion rootProject.ext.android.commonTargetSdkVersion
+        versionCode rootProject.ext.android.commonVersionCode
+        versionName rootProject.ext.android.commonversionName
+        consumerProguardFiles "proguard-rules.pro"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+    compile "android.arch.lifecycle:runtime:1.1.0"
+    annotationProcessor "android.arch.lifecycle:compiler:1.1.0"
+
+//    compile project(':base-module:function-module:citypickerview')
+
+    compile 'com.github.lzyzsd:jsbridge:1.0.4'
+    compile 'com.tencent:mmkv:1.0.12'
+    compile 'org.apache.commons:commons-lang3:3.7'
+    compile 'org.greenrobot:eventbus:3.1.1'
+    compile project(':base-module:system-module:baseanimation')
+}
+
+
+
+
+
+

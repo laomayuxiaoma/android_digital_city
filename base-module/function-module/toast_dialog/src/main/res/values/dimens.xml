@@ -1,0 +1,223 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines.
+    由于UI给的是IOS的UI图，所以该文件转换的规则为 （UI标注的px/2）,每增加一个尺寸需要在sw360dp添加对应的值
+    -->
+    <dimen name="actionbar_height">48dp</dimen>
+    <dimen name="actionbar_ic_share_wh">36dp</dimen>
+    <dimen name="actionbar_padding_right">13dp</dimen>
+
+    <dimen name="advert_h">180dp</dimen>
+    <dimen name="msg_act_h">108dp</dimen>
+
+    <dimen name="row_height">48dp</dimen>
+    <dimen name="row_distance">10dp</dimen>
+    <dimen name="row_bottom_line_margin">12dp</dimen>
+    <dimen name="row_text_margin">15dp</dimen>
+
+    <dimen name="actionbar_arrow_distance">15dp</dimen>
+    <!--底部tab高度，实名认证引导用了，小心修改-->
+    <dimen name="bottom_tab_height">60dp</dimen>
+    <dimen name="dimen_1px">0.5dp</dimen>
+    <dimen name="dimen_2px">1dp</dimen>
+    <dimen name="dimen_lose_2px">-1dp</dimen>
+    <dimen name="dimen_3px">2dp</dimen>
+    <dimen name="dimen_lose_4px">-2dp</dimen>
+    <dimen name="dimen_4px">2dp</dimen>
+    <dimen name="dimen_6px">3dp</dimen>
+    <dimen name="dimen_8px">4dp</dimen>
+    <dimen name="dimen_10px">5dp</dimen>
+    <dimen name="dimen_12px">6dp</dimen>
+    <dimen name="dimen_14px">7dp</dimen>
+    <dimen name="dimen_15px">7.5dp</dimen>
+    <dimen name="dimen_16px">8dp</dimen>
+    <dimen name="dimen_18px">9dp</dimen>
+    <dimen name="dimen_20px">10dp</dimen>
+    <dimen name="dimen_22px">11dp</dimen>
+    <dimen name="dimen_24px">12dp</dimen>
+    <dimen name="dimen_25px">13dp</dimen>
+    <dimen name="dimen_26px">13dp</dimen>
+    <dimen name="dimen_28px">14dp</dimen>
+    <dimen name="dimen_30px">15dp</dimen>
+    <dimen name="dimen_32px">16dp</dimen>
+    <dimen name="dimen_34px">17dp</dimen>
+    <dimen name="dimen_36px">18dp</dimen>
+    <dimen name="dimen_38px">19dp</dimen>
+    <dimen name="dimen_40px">20dp</dimen>
+    <dimen name="dimen_42px">21dp</dimen>
+    <dimen name="dimen_44px">22dp</dimen>
+    <dimen name="dimen_46px">23dp</dimen>
+    <dimen name="dimen_48px">24dp</dimen>
+    <dimen name="dimen_49px">24dp</dimen>
+    <dimen name="dimen_50px">25dp</dimen>
+    <dimen name="dimen_52px">26dp</dimen>
+    <dimen name="dimen_54px">27dp</dimen>
+    <dimen name="dimen_58px">29dp</dimen>
+    <dimen name="dimen_60px">30dp</dimen>
+    <dimen name="dimen_62px">31dp</dimen>
+    <dimen name="dimen_64px">32dp</dimen>
+    <dimen name="dimen_66px">33dp</dimen>
+    <dimen name="dimen_68px">34dp</dimen>
+    <dimen name="dimen_70px">35dp</dimen>
+    <dimen name="dimen_72px">36dp</dimen>
+    <dimen name="dimen_74px">37dp</dimen>
+    <dimen name="dimen_75px">38dp</dimen>
+    <dimen name="dimen_76px">38dp</dimen>
+    <dimen name="dimen_78px">39dp</dimen>
+    <dimen name="dimen_80px">40dp</dimen>
+    <dimen name="dimen_84px">42dp</dimen>
+    <dimen name="dimen_86px">43dp</dimen>
+    <dimen name="dimen_88px">44dp</dimen>
+    <dimen name="dimen_lose_88px">-44dp</dimen>
+    <dimen name="dimen_90px">45dp</dimen>
+    <dimen name="dimen_92px">46dp</dimen>
+    <dimen name="dimen_94px">47dp</dimen>
+    <dimen name="dimen_95px">48dp</dimen>
+    <dimen name="dimen_98px">49dp</dimen>
+    <dimen name="dimen_100px">50dp</dimen>
+    <dimen name="dimen_104px">52dp</dimen>
+    <dimen name="dimen_108px">54dp</dimen>
+    <dimen name="dimen_110px">55dp</dimen>
+    <dimen name="dimen_112px">56dp</dimen>
+    <dimen name="dimen_114px">57dp</dimen>
+    <dimen name="dimen_lose_100px">-50dp</dimen>
+    <dimen name="dimen_118px">59dp</dimen>
+    <dimen name="dimen_120px">60dp</dimen>
+    <dimen name="dimen_124px">62dp</dimen>
+    <dimen name="dimen_126px">63dp</dimen>
+    <dimen name="dimen_128px">64dp</dimen>
+    <dimen name="dimen_130px">65dp</dimen>
+    <dimen name="dimen_132px">66dp</dimen>
+    <dimen name="dimen_136px">68dp</dimen>
+    <dimen name="dimen_140px">70dp</dimen>
+    <dimen name="dimen_144px">72dp</dimen>
+    <dimen name="dimen_148px">74dp</dimen>
+    <dimen name="dimen_150px">75dp</dimen>
+    <dimen name="dimen_156px">78dp</dimen>
+    <dimen name="dimen_160px">80dp</dimen>
+    <dimen name="dimen_170px">85dp</dimen>
+    <dimen name="dimen_176px">88dp</dimen>
+    <dimen name="dimen_180px">90dp</dimen>
+    <dimen name="dimen_184px">92dp</dimen>
+    <dimen name="dimen_188px">94dp</dimen>
+    <dimen name="dimen_190px">95dp</dimen>
+    <dimen name="dimen_200px">100dp</dimen>
+    <dimen name="dimen_210px">105dp</dimen>
+    <dimen name="dimen_214px">107dp</dimen>
+    <dimen name="dimen_225px">113dp</dimen>
+    <dimen name="dimen_240px">120dp</dimen>
+    <dimen name="dimen_241px">120dp</dimen>
+    <dimen name="dimen_246px">123dp</dimen>
+    <dimen name="dimen_255px">127dp</dimen>
+    <dimen name="dimen_260px">100dp</dimen>
+    <dimen name="dimen_270px">139dp</dimen>
+    <dimen name="dimen_284px">142dp</dimen>
+    <dimen name="dimen_290px">145dp</dimen>
+    <dimen name="dimen_294px">147dp</dimen>
+    <dimen name="dimen_300px">150dp</dimen>
+    <dimen name="dimen_307px">154dp</dimen>
+    <dimen name="dimen_314px">157dp</dimen>
+    <dimen name="dimen_320px">160dp</dimen>
+    <dimen name="dimen_330px">165dp</dimen>
+    <dimen name="dimen_340px">170dp</dimen>
+    <dimen name="dimen_344px">172dp</dimen>
+    <dimen name="dimen_350px">175dp</dimen>
+    <dimen name="dimen_360px">180dp</dimen>
+    <dimen name="dimen_380px">190dp</dimen>
+    <dimen name="dimen_390px">195dp</dimen>
+    <dimen name="dimen_404px">202dp</dimen>
+    <dimen name="dimen_412px">206dp</dimen>
+    <dimen name="dimen_415px">208dp</dimen>
+    <dimen name="dimen_420px">210dp</dimen>
+    <dimen name="dimen_450px">225dp</dimen>
+    <dimen name="dimen_480px">240dp</dimen>
+    <dimen name="dimen_500px">250dp</dimen>
+    <dimen name="dimen_530px">265dp</dimen>
+    <dimen name="dimen_540px">270dp</dimen>
+    <dimen name="dimen_550px">275dp</dimen>
+    <dimen name="dimen_558px">279dp</dimen>
+    <dimen name="dimen_580px">290dp</dimen>
+    <dimen name="dimen_600px">300dp</dimen>
+    <dimen name="dimen_640px">320dp</dimen>
+    <dimen name="dimen_648px">324dp</dimen>
+    <dimen name="dimen_700px">350dp</dimen>
+
+    <!--不同字体 -->
+    <dimen name="f01_48">23sp</dimen>
+    <dimen name="f02_36">17sp</dimen>
+    <dimen name="f03_34">16sp</dimen>
+    <dimen name="f04_30">14sp</dimen>
+    <dimen name="f05_28">13sp</dimen>
+    <dimen name="f06_24">11sp</dimen>
+    <dimen name="f07_26">12sp</dimen>
+    <dimen name="f08_40">21sp</dimen>
+    <dimen name="f09_38">19sp</dimen>
+    <dimen name="size_36">18sp</dimen>
+
+    <dimen name="size_s">11sp</dimen>
+    <dimen name="size_xs">12sp</dimen>
+    <dimen name="size_m">13sp</dimen>
+    <dimen name="size_l">14sp</dimen>
+    <dimen name="size_xl">16sp</dimen>
+    <dimen name="size_xxl">18sp</dimen>
+    <dimen name="size_xxxl">24sp</dimen>
+    <dimen name="size_big">32sp</dimen>
+
+    <dimen name="home_fun_w">146dp</dimen>
+    <dimen name="home_fun_h">65dp</dimen>
+
+    <dimen name="item_yyy_padding_l">30dp</dimen>
+    <dimen name="item_yyy_padding_r">24dp</dimen>
+
+    <dimen name="home_recom_biao_w">220dp</dimen>
+    <dimen name="home_recom_biao_btn_h">42dp</dimen>
+
+    <dimen name="bid_confirm_detail_w">220dp</dimen>
+
+    <dimen name="hb_item_left_tv_w">160dp</dimen>
+    <dimen name="hb_item_left_w">216dp</dimen>
+    <dimen name="hb_item_right_w">126dp</dimen>
+    <dimen name="hb_item_status_left">148dp</dimen>
+
+    <dimen name="bid_operate_bar_h">54dp</dimen>
+
+    <dimen name="auto_bid_day_w">56dp</dimen>
+
+    <dimen name="btn_height_long">48dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="dimen_15dp">15dp</dimen>
+    <dimen name="calc_item_width">90dp</dimen>
+    <dimen name="calc_item_height">80dp</dimen>
+    <dimen name="payment_group_size">330dp</dimen>
+    <dimen name="payment_item_size">70dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dimen_400px">200dp</dimen>
+
+    <dimen name="login_btn_top">30dp</dimen>
+    <dimen name="login_et_top">30dp</dimen>
+    <dimen name="register_logo_top">60dp</dimen>
+    <dimen name="register_logo_bottom">60dp</dimen>
+    <dimen name="register_btn_top">50dp</dimen>
+
+    <dimen name="banner_height">175dp</dimen>
+    <dimen name="shortcut_grid_left">15dp</dimen>
+
+    <dimen name="swing_card_height">75dp</dimen>
+    <dimen name="swing_card_btn_height">50dp</dimen>
+    <dimen name="switch_margin">20dp</dimen>
+
+    <dimen name="month_bill_empty_height">230dp</dimen>
+
+    <dimen name="my_rate_item_width">110dp</dimen>
+
+    <dimen name="pay_qr_width">600px</dimen>
+
+    <dimen name="real_name_item_height">53dp</dimen>
+    <dimen name="status_bar_view_height">0dp</dimen>
+
+    <dimen name="dot_layout_margin">15dp</dimen>
+    <dimen name="dot_offset">5dp</dimen>
+    <dimen name="dot_margin_bottom">10dp</dimen>
+</resources>

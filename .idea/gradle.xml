@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/base-module" />
+            <option value="$PROJECT_DIR$/base-module/basekit" />
+            <option value="$PROJECT_DIR$/base-module/communicationinterface" />
+            <option value="$PROJECT_DIR$/base-module/function-module" />
+            <option value="$PROJECT_DIR$/base-module/function-module/BottomNavigation" />
+            <option value="$PROJECT_DIR$/base-module/function-module/amapservice" />
+            <option value="$PROJECT_DIR$/base-module/function-module/calendar" />
+            <option value="$PROJECT_DIR$/base-module/function-module/calendarview" />
+            <option value="$PROJECT_DIR$/base-module/function-module/citylocation" />
+            <option value="$PROJECT_DIR$/base-module/function-module/citypicker" />
+            <option value="$PROJECT_DIR$/base-module/function-module/customrefreshlayout" />
+            <option value="$PROJECT_DIR$/base-module/function-module/customtablayout" />
+            <option value="$PROJECT_DIR$/base-module/function-module/customtitleview" />
+            <option value="$PROJECT_DIR$/base-module/function-module/functionkit" />
+            <option value="$PROJECT_DIR$/base-module/function-module/imageloader" />
+            <option value="$PROJECT_DIR$/base-module/function-module/loadandshare" />
+            <option value="$PROJECT_DIR$/base-module/function-module/mdsearch" />
+            <option value="$PROJECT_DIR$/base-module/function-module/pickerview" />
+            <option value="$PROJECT_DIR$/base-module/function-module/picture_library" />
+            <option value="$PROJECT_DIR$/base-module/function-module/pictureselect" />
+            <option value="$PROJECT_DIR$/base-module/function-module/refresh-layout" />
+            <option value="$PROJECT_DIR$/base-module/function-module/selector" />
+            <option value="$PROJECT_DIR$/base-module/function-module/tabcontainerview" />
+            <option value="$PROJECT_DIR$/base-module/function-module/toast_dialog" />
+            <option value="$PROJECT_DIR$/base-module/function-module/ucrop" />
+            <option value="$PROJECT_DIR$/base-module/property-module" />
+            <option value="$PROJECT_DIR$/base-module/property-module/monitor" />
+            <option value="$PROJECT_DIR$/base-module/property-module/propertykit" />
+            <option value="$PROJECT_DIR$/base-module/system-module" />
+            <option value="$PROJECT_DIR$/base-module/system-module/baseanimation" />
+            <option value="$PROJECT_DIR$/base-module/system-module/systemkit" />
+            <option value="$PROJECT_DIR$/base-module/third-module" />
+            <option value="$PROJECT_DIR$/base-module/third-module/loadandshare" />
+            <option value="$PROJECT_DIR$/base-module/third-module/pushlib" />
+            <option value="$PROJECT_DIR$/base-module/third-module/thirdkit" />
+            <option value="$PROJECT_DIR$/base-module/third-module/weiboSDK" />
+            <option value="$PROJECT_DIR$/base-module/third-module/zxing" />
+            <option value="$PROJECT_DIR$/operational-module" />
+            <option value="$PROJECT_DIR$/operational-module/deal-module" />
+            <option value="$PROJECT_DIR$/operational-module/home-module" />
+            <option value="$PROJECT_DIR$/operational-module/me-module" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+        <option name="testRunner" value="PLATFORM" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

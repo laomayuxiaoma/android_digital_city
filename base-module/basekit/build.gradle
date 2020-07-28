@@ -1,0 +1,108 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+android {
+    compileSdkVersion rootProject.ext.commonCompileSdkVersion
+
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android.commonMinSdkVersion
+        targetSdkVersion rootProject.ext.android.commonTargetSdkVersion
+        versionCode rootProject.ext.android.commonVersionCode
+        versionName rootProject.ext.android.commonversionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        kapt {
+            arguments {
+                arg("AROUTER_MODULE_NAME", project.getName())
+                arg("AROUTER_GENERATE_DOC", "enable")
+            }
+            generateStubs = true
+        }
+
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_8
+            targetCompatibility JavaVersion.VERSION_1_8
+        }
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+
+    }
+    useLibrary 'org.apache.http.legacy'
+    dataBinding {
+        enabled = true
+    }
+
+}
+
+kapt {
+    generateStubs = true
+}
+
+dependencies {
+    api fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    api 'com.android.support:recyclerview-v7:27.1.1'
+    api 'com.youth.banner:banner:1.4.10'
+    implementation 'com.android.support:support-core-utils:27.0.2'
+    api 'org.xutils:xutils:3.5.0'
+    api 'org.apache.commons:commons-lang3:3.7'
+//    api 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.2@aar'
+    api 'com.android.support:cardview-v7:28.0.0'
+    api 'com.zyp.cardview:cardview:1.0.1'
+    api 'cn.jzvd:jiaozivideoplayer:7.0.4'
+
+
+    api project(path: ':base-module:property-module:propertykit')
+    api project(path: ':base-module:third-module:thirdkit')
+    api project(path: ':base-module:system-module:systemkit')
+    api project(path: ':base-module:function-module:functionkit')
+    api project(path: ':base-module:communicationinterface')
+    kapt 'com.alibaba:arouter-compiler:1.2.2'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    // 基础依赖包，必须要依赖
+    compile 'com.gyf.immersionbar:immersionbar:3.0.0'
+// fragment快速实现（可选）
+    compile 'com.gyf.immersionbar:immersionbar-components:3.0.0'
+// kotlin扩展（可选）
+    compile 'com.gyf.immersionbar:immersionbar-ktx:3.0.0'
+
+//    api 'com.squareup.leakcanary:leakcanary-android:1.6.1'
+//    releaseImplementation 'com.squareup.leakcanary:leakcanary-android-no-op:1.6.1'
+//    // Optional, if you use support library fragments:
+//    api 'com.squareup.leakcanary:leakcanary-support-fragment:1.6.1'
+}
+
+
+//uploadArchives {
+//    if (isAllPack.toBoolean() || isBasekitPack.toBoolean()) {
+//        repositories {
+//            mavenDeployer {
+//                repository(url: "file://localhost/" + System.getenv("DATAACOUNT_HOME") + "/extras/")
+//                pom.version = '1.0'
+//                pom.groupId = 'com.muheda.baselib'
+//                pom.artifactId = 'basekit'
+//            }
+//        }
+//    }
+//}
